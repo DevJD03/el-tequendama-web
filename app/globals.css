@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f3f1f9;
+  font-family: 'Inter', sans-serif;
+  color: #1C1C1E;
+}
+html {
+  min-width: 320px;
+}
