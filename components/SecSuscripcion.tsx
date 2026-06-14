@@ -18,7 +18,10 @@ export default function SeccionNewsletter() {
     try {
       const respuesta = await fetch("https://el-tequendama.onrender.com/suscriptores", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+        "Content-Type": "application/json", 
+        "Authorization": `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`
+      },
         body: JSON.stringify({ nombre, email: correo, telefono }),
       })
 
